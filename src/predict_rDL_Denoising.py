@@ -113,7 +113,7 @@ weights_file = glob.glob(load_denoise_module_dir + load_denoise_module_filter)
 weights_file.sort(key=len)
 g.load_weights(weights_file[-1])
 print('Load rDL denoise model: ' + weights_file[-1])
-optimizer_g = optimizers.Adam(lr=1e-4, decay=0.5)
+optimizer_g = optimizers.Adam(learning_rate=1e-4, decay=0.5)
 g.compile(loss=mse_ssim, optimizer=optimizer_g)
 
 p = modelFN_sr((input_height, input_width, pParam.ndirs*pParam.nphases))
@@ -121,7 +121,7 @@ weights_file = glob.glob(load_sr_module_dir + load_sr_module_filter)
 weights_file.sort(key=len)
 p.load_weights(weights_file[-1])
 print('Load SR inference model: ' + weights_file[-1])
-optimizer_p = optimizers.Adam(lr=1e-4, decay=0.5)
+optimizer_p = optimizers.Adam(learning_rate=1e-4, decay=0.5)
 p.compile(loss=mse_ssim, optimizer=optimizer_p)
 
 # --------------------------------------------------------------------------------
@@ -163,6 +163,7 @@ for i in range(cycle_num):
     # calculate average images and modamps
     for j in range(num_average):
         path = images_path[i * num_average + j + frame_start]
+        print(f' This is the path = {path}')
         header, input_g = read_mrc(path, filetype='image')
         average_batch = average_batch + input_g
         images_percycle.append(input_g)

@@ -121,7 +121,7 @@ def read_mrc(filename, filetype='image'):
         nx = nx * 2
     elif header[0][3] == 6:
         data_type = 'uint16'
-
+    print(f'negative values check: nx: {nx} : ny : {ny} : nz : {nz}')
     data = np.ndarray(shape=(nx, ny, nz))
     imgrawdata = np.fromfile(fd, data_type)
     fd.close()
