@@ -31,10 +31,10 @@ parser.add_argument("--data_folder", type=str, default="Microtubules")
 parser.add_argument("--output_suffix", type=str, default="")
 # model parameters
 parser.add_argument("--load_denoise_module_dir", type=str, default="../trained_models/rDL_Denoising_Module/")
-parser.add_argument("--load_denoise_module_filter", type=str, default="*Best.h5")
+parser.add_argument("--load_denoise_module_filter", type=str, default="*Best.weights.h5")
 parser.add_argument("--denoise_model", type=str, default="rDL_Denoiser")
 parser.add_argument("--load_sr_module_dir", type=str, default="../trained_models/SR_Inference_Module/")
-parser.add_argument("--load_sr_module_filter", type=str, default="*Best.h5")
+parser.add_argument("--load_sr_module_filter", type=str, default="*Best.weights.h5")
 parser.add_argument("--sr_model", type=str, default="DFCAN")
 # image parameters
 parser.add_argument("--input_height", type=int, default=256)
