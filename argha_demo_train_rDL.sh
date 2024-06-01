@@ -1,11 +1,10 @@
 #!/bin/bash
-#SBATCH --time=00:10:00 # Run time
-#SBATCH --nodes 1  # Number of reaquested nodes 
+#SBATCH --time=10:00:00 # Run time
+#SBATCH --nodes 2  # Number of reaquested nodes 
 #SBATCH --ntasks-per-node=1
-##SBATCH --mem 100G
-#SBATCH -c 53
-#SBATCH -p hpc3-53
-#SBATCH --gres=gpu:A100.10gb:1 
+##SBATCH --mem 600GB
+#SBATCH -c 54
+#SBATCH -p gpu
 #SBTACH --job-name A100-test-first-run
 #SBATCH --error=A100_multi_error.o%j
 #SBATCH --output=A100_multi_output.o%j
@@ -33,4 +32,4 @@ eval "$(conda shell.bash hook)"
 conda activate thesis
 
 
-srun python /share/klab/argha/rDL_Microscope/src/demo_train_rDL_SIM_Model.sh
+srun bash ./src/demo_train_rDL_SIM_Model.sh

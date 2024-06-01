@@ -1,0 +1,66 @@
+2024-05-31 18:56:16.821485: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-05-31 18:56:16.866180: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-05-31 18:56:18.064737: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-05-31 18:56:18.169921: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-05-31 18:56:20.720829: E external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:282] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2024-05-31 18:56:20.720884: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:134] retrieving CUDA diagnostic information for host: hpc3-52
+2024-05-31 18:56:20.720891: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:141] hostname: hpc3-52
+2024-05-31 18:56:20.720970: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:165] libcuda reported version is: 530.30.2
+2024-05-31 18:56:20.720993: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:169] kernel reported version is: 530.30.2
+2024-05-31 18:56:20.720997: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:248] kernel version seems to match DSO: 530.30.2
+2024-05-31 18:56:20.937654: E external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:282] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2024-05-31 18:56:20.937733: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:134] retrieving CUDA diagnostic information for host: hpc3-53
+2024-05-31 18:56:20.937739: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:141] hostname: hpc3-53
+2024-05-31 18:56:20.937821: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:165] libcuda reported version is: 530.30.2
+2024-05-31 18:56:20.937838: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:169] kernel reported version is: 530.30.2
+2024-05-31 18:56:20.937842: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:248] kernel version seems to match DSO: 530.30.2
+WARNING:tensorflow:5 out of the last 5 calls to <function TensorFlowTrainer.make_train_function.<locals>.one_step_on_iterator at 0x1473e411f880> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function TensorFlowTrainer.make_train_function.<locals>.one_step_on_iterator at 0x14b30011f880> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function TensorFlowTrainer.make_train_function.<locals>.one_step_on_iterator at 0x1473e411f880> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function TensorFlowTrainer.make_train_function.<locals>.one_step_on_iterator at 0x14b30011f880> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+./src/demo_train_rDL_SIM_Model.sh: line 21: 3365313 Killed                  python src/train_SR_Inference_Module.py --gpu_id '0' --gpu_memory_fraction 0.95 --root_path "./data_train/rDL-SIM/SR/" --data_folder "Microtubules" --save_weights_path "./trained_models/SR_Inference_Module/" --save_weights_suffix "" --load_weights_flag 0 --model_name "DFCAN" --total_iterations 3000 --sample_interval 50 --validate_interval 50 --validate_num 2 --batch_size 3 --start_lr 1e-5 --input_height 128 --input_width 128 --input_channels 9 --scale_factor 2 --norm_flag 0
+2024-05-31 23:51:38.060549: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-05-31 23:51:39.589211: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-05-31 23:51:43.351383: E external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:282] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2024-05-31 23:51:43.351456: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:134] retrieving CUDA diagnostic information for host: hpc3-53
+2024-05-31 23:51:43.351461: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:141] hostname: hpc3-53
+2024-05-31 23:51:43.351561: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:165] libcuda reported version is: 530.30.2
+2024-05-31 23:51:43.351581: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:169] kernel reported version is: 530.30.2
+2024-05-31 23:51:43.351586: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:248] kernel version seems to match DSO: 530.30.2
+/home/student/a/asarker/.conda/envs/thesis/lib/python3.10/site-packages/keras/src/layers/activations/leaky_relu.py:41: UserWarning: Argument `alpha` is deprecated. Use `negative_slope` instead.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/share/klab/argha/rDL_Microscope/src/train_rDL_Denoising_Module.py", line 198, in <module>
+    OTF, prol_OTF, PSF = read_otf(OTF_path_list[wave_length], Nx_hr, Ny_hr, dkx, dky, dkr)
+  File "/share/klab/argha/rDL_Microscope/src/sim_fitting/read_otf.py", line 140, in read_otf
+    headerotf, rawOTF = read_mrc(otf_path)
+  File "/share/klab/argha/rDL_Microscope/src/sim_fitting/read_otf.py", line 105, in read_mrc
+    fd = open(filename, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: './sim_fitting/OTF/TIRF488_cam1_0_z30_OTF2d.mrc'
+slurmstepd: error: Detected 1 oom-kill event(s) in StepId=6141866.0 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
+srun: error: hpc3-53: task 1: Out Of Memory
+./src/demo_train_rDL_SIM_Model.sh: line 21: 3779631 Killed                  python src/train_SR_Inference_Module.py --gpu_id '0' --gpu_memory_fraction 0.95 --root_path "./data_train/rDL-SIM/SR/" --data_folder "Microtubules" --save_weights_path "./trained_models/SR_Inference_Module/" --save_weights_suffix "" --load_weights_flag 0 --model_name "DFCAN" --total_iterations 3000 --sample_interval 50 --validate_interval 50 --validate_num 2 --batch_size 3 --start_lr 1e-5 --input_height 128 --input_width 128 --input_channels 9 --scale_factor 2 --norm_flag 0
+2024-05-31 23:51:57.151035: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-05-31 23:51:58.433025: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-05-31 23:52:01.614324: E external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:282] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2024-05-31 23:52:01.614404: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:134] retrieving CUDA diagnostic information for host: hpc3-52
+2024-05-31 23:52:01.614410: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:141] hostname: hpc3-52
+2024-05-31 23:52:01.614523: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:165] libcuda reported version is: 530.30.2
+2024-05-31 23:52:01.614538: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:169] kernel reported version is: 530.30.2
+2024-05-31 23:52:01.614542: I external/local_xla/xla/stream_executor/cuda/cuda_diagnostics.cc:248] kernel version seems to match DSO: 530.30.2
+/home/student/a/asarker/.conda/envs/thesis/lib/python3.10/site-packages/keras/src/layers/activations/leaky_relu.py:41: UserWarning: Argument `alpha` is deprecated. Use `negative_slope` instead.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/share/klab/argha/rDL_Microscope/src/train_rDL_Denoising_Module.py", line 198, in <module>
+    OTF, prol_OTF, PSF = read_otf(OTF_path_list[wave_length], Nx_hr, Ny_hr, dkx, dky, dkr)
+  File "/share/klab/argha/rDL_Microscope/src/sim_fitting/read_otf.py", line 140, in read_otf
+    headerotf, rawOTF = read_mrc(otf_path)
+  File "/share/klab/argha/rDL_Microscope/src/sim_fitting/read_otf.py", line 105, in read_mrc
+    fd = open(filename, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: './sim_fitting/OTF/TIRF488_cam1_0_z30_OTF2d.mrc'
+slurmstepd: error: Detected 1 oom-kill event(s) in StepId=6141866.0 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
+slurmstepd: error: Detected 1 oom-kill event(s) in StepId=6141866.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
